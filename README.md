@@ -1,8 +1,8 @@
 # GetYourIPAddresses
-List Network IP Adress from Terminal
+List Network IP Adresses in Terminal
 
 Set attribute of the file to executable by running this command.
 chmod +x GetIpAddresses.sh
 
-Execute command on terminal.
+Execute command in terminal.
 ./GetIPAddresses.sh
