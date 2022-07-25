@@ -5,7 +5,7 @@
 #You can execute the command ifconfig in terminal to get your specific values.
 
 
-alias showwanip='dig TXT +short o-o.myaddr.l.google.com @ns1.google.com'
+alias showwanip=$'dig TXT +short o-o.myaddr.l.google.com @ns1.google.com | sed \'s/"//g\''
 alias showlanip='ipconfig getifaddr en10'
 alias showwifip='ipconfig getifaddr en0'
 alias myips='echo -n "WAN: " && showwanip ; echo -n "LAN: " && showlanip ; echo -n "WiFI: " && showwifip'
