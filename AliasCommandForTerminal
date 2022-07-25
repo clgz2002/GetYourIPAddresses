@@ -1,0 +1,11 @@
+#Insert the following commands in your bash or zsh profiles. Usually located in /Users/YourUsername/.zshrc or ~/.bash_profile
+#After inserting this alias in your profile remember to reload your profile. You can close terminal or execute this command: exec zsh -l.
+#Update the value en10 to your corresponding ethernet adapter
+#Update en0 toyour corresponding wifi adapter
+#You can execute 
+
+
+alias showwanip='dig TXT +short o-o.myaddr.l.google.com @ns1.google.com'
+alias showlanip='ipconfig getifaddr en10'
+alias showwifip='ipconfig getifaddr en0'
+alias myips='echo -n "WAN: " && showwanip ; echo -n "LAN: " && showlanip ; echo -n "WiFI: " && showwifip'
